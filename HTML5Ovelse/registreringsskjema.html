@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset=utf-8>
+        <title>Oppgave 1: Skjema</title>
+    </head>
+    <body>
+        <header>
+            <h1>Oppgave 1: Skjema</h1>
+            <nav>
+                <ul>
+                    <li><a href=index.html>Hjem</a></li>
+                    <li><a href=validering.html>Valideringsoppgave</a></li>
+                    <li><a href="mal.html">Nettside-mal</a></li>
+                    <li><a href="kontakt.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Skjema:</h2>
+                <form>
+                    <label>
+                        Navn:
+                        <input type="text" name="navn" placeholder="Skriv navn og etternavn" minlength="2" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                    </label>
+                    
+                    <label>
+                        E-post:
+                        <input type="email" name="e-post" placeholder="Skriv e-postadresse" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+
+                    <label>
+                        Passord:
+                        <input type="password" name="passord" placeholder="Skriv et passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </label>
+
+                    <label>
+                        Alder:
+                        <input type="number" name="alder" placeholder="Skriv din alder" min="18" max="99" required>
+                    </label>
+
+                    <label>
+                        Telefonnummer:
+                        <input type="tel" name="telefonnummer" placeholder="Skriv ditt telefonnummer" pattern="[0-9]{8,12}" required>
+                    </label>
+
+                    <label>
+                        Fødselsdato:
+                        <input type="date" name="fodselsdato" max="2023-12-31" required>
+                    </label>
+
+                    <label>
+                        Mann:
+                        <input type="radio" name="kjonn" required>
+                    </label>
+
+                    <label>
+                        Kvinne:
+                        <input type="radio" name="kjonn" required>
+                    </label>
+
+                    <label>
+                        Annet:
+                        <input type="radio" name="kjonn" required>
+                    </label>
+
+                    <label>
+                        Land:
+                        <select name="land" required>
+                            <option value="">Velg land</option>
+                            <option value="norge">Norge</option>
+                            <option value="sverige">Sverige</option>
+                            <option value="danmark">Danmark</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Personvern:
+                        <input type="checkbox" required>
+                    </label>
+
+                    <input type="submit" value="Send skjema">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <h3>Kontakt meg på epost via Mohammb@hiof.no</h3>
+            <p>2024 Mohammed Belhadj</p>
+        </footer>
+    </body>
+</html>

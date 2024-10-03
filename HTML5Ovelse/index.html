@@ -3,42 +3,53 @@
     <head>
         <meta charset=utf-8>
         <title>Hjemmeside</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <h1>Velkommen til Nettsiden!</h1>
-            <nav>
+        <div id="container">
+
+            <header>
+                <h1>Velkommen til Nettsiden!</h1>
+            </header>
+
+            <nav id="navigasjon">
                 <ul>
                     <li><a href=index.html>Hjem</a></li>
                     <li><a href=validering.html>Valideringsoppgave</a></li>
+                    <li><a href=oppskrift.html>Oppskrift</a></li>
                     <li><a href="mal.html">Nettside-mal</a></li>
                     <li><a href="kontakt.html">Kontakt oss</a></li>
                 </ul>
             </nav>
-        </header>
 
-        <main>
-            <section>
-                <article>
-                    <h2>Validering</h2>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae tempor turpis leo ornare conubia facilisis nec sagittis. Vestibulum dapibus sagittis sed curabitur ante sagittis hendrerit cubilia ipsum. Magna dolor lorem urna per ullamcorper quis non. Habitasse nisi curae curae scelerisque ipsum cursus at. Acurabitur urna lacus vitae interdum vulputate fermentum. Egestas dictum magnis tellus blandit habitant hendrerit. Aliquam cursus nam amet habitant ligula enim?</p>
-                </article>
+            <main>
+                <section>
+                    <h2>Artikkler</h2>
+                    <article class="articleCard">
+                        <a href="validering.html">
+                            <h2>Validering</h2>
+                        </a>
+                    </article>
 
-                <article>
-                    <h2>Kontakt oss</h2>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae tempor turpis leo ornare conubia facilisis nec sagittis. Vestibulum dapibus sagittis sed curabitur ante sagittis hendrerit cubilia ipsum. Magna dolor lorem urna per ullamcorper quis non. Habitasse nisi curae curae scelerisque ipsum cursus at. Acurabitur urna lacus vitae interdum vulputate fermentum. Egestas dictum magnis tellus blandit habitant hendrerit. Aliquam cursus nam amet habitant ligula enim?</p>
-                </article>
+                    <article class="articleCard">
+                        <a href="kontakt.html">
+                            <h2>Kontakt oss</h2>
+                        </a>
+                    </article>
 
-                <article>
-                    <h2>Studieplan</h2>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae tempor turpis leo ornare conubia facilisis nec sagittis. Vestibulum dapibus sagittis sed curabitur ante sagittis hendrerit cubilia ipsum. Magna dolor lorem urna per ullamcorper quis non. Habitasse nisi curae curae scelerisque ipsum cursus at. Acurabitur urna lacus vitae interdum vulputate fermentum. Egestas dictum magnis tellus blandit habitant hendrerit. Aliquam cursus nam amet habitant ligula enim?</p>
-                </article>
-            </section>
-        </main>
+                    <article class="articleCard">
+                        <a href="studieplan.html">
+                            <h2>Studieplan</h2>
+                        </a>
+                    </article>
+                </section>
+            </main>
 
-        <aside>
-            <section>
-                <h2>5 Lenker til semantisk HTML</h2>
+            <aside>
+                <section>
+                    <h2>5 Lenker til semantisk HTML</h2>
+                </section>
+
                 <nav>
                     <ul>
                         <li><a href="https://ndla.no/nb/subject:1:1352b19e-e706-4480-a728-c6b0a57ba8ae/topic:1:f7b88f8c-5f2f-4ea8-bdcf-1bd4811c37b3/topic:1:df9278b0-7252-4a62-a39c-3107d7f319f1/resource:8c2c0c8e-11cd-488a-a1af-145f4632cdb3">NDLA</a></li>
@@ -48,17 +59,18 @@
                         <li><a href="https://bekk.gitbook.io/web-intro/grunnleggende-webutvikling/cover-1/03-semantikk">Wikipedia</a></li>
                     </ul>
                 </nav>
-            </section>
 
-            <section>
-                <h2>Google-søkeresultater om HTML5</h2>
-                <a href="https://www.google.com/search?q=HTML5&oq=HTML5&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg80gEIMjc4N2owajGoAgCwAgA&sourceid=chrome&ie=UTF-8">Trykk her for å se resultatene</a>
-            </section>
-        </aside>
+                <section>
+                    <h2>Google-søkeresultater om HTML5</h2>
+                    <a href="https://www.google.com/search?q=HTML5&oq=HTML5&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg80gEIMjc4N2owajGoAgCwAgA&sourceid=chrome&ie=UTF-8">Trykk her for å se resultatene</a>
+                </section>
+            </aside>
 
-        <footer>
-            <h3>Kontakt meg på epost via Mohammb@hiof.no</h3>
-            <p>2024 Mohammed Belhadj</p>
-        </footer>
+            <footer>
+                <h3>Kontakt meg på epost via Mohammb@hiof.no</h3>
+                <p>2024 Mohammed Belhadj</p>
+            </footer>
+
+        </div>
     </body>
 </html>

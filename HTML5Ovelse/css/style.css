@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+header {
+    width: 100%;
+    background: url('/Users/belhadj/Documents/GitHub/Webutvikling/Webutvikling2024_MB/HTML5Ovelse/img/gronnsaker.jpg');
+    background-size: cover;
+    padding: 5rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+#navigasjon {
+    width: 100%;
+}
+
+#navigasjon ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    padding: 2rem;
+}
+
+#navigasjon ul li a{
+    color: #000000;
+    text-decoration: none;
+}
+
+#navigasjon ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 70%;
+    min-width: 400px;
+    padding: 2rem;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main section article {
+    min-width: 300px;
+    max-width: 400px;
+    margin: 2rem;
+    border: 1px solid;
+    box-shadow: 5px 10px;
+}
+
+main section h2 {
+    flex: 0 0 100%;
+}
+
+main section article a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main section article:hover {
+    background-color: #454545;
+    border: 1px solid;
+    box-shadow: 5px 10px;
+}
+
+main section article:hover a {
+    color: #fff;
+}
+
+aside {
+    flex-direction: column;
+    max-width: 30%;
+    min-width: 350px;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    color: #454545;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #454545;
+}
+
+aside section a {
+    color: #454545;
+}
+
+aside:hover {
+    background-color: #454545;
+    color: #fff;
+}
+
+aside:hover a {
+    background-color: #454545;
+    color: #fff;
+}
+
+footer {
+    background-color: #454545;
+    color: #fff;
+    width: 100%;
+    padding: 2rem;
+}

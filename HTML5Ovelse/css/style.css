@@ -86,7 +86,6 @@ aside {
     min-width: 350px;
     margin: 2rem;
     padding: 2rem;
-    background-color: #fff;
     color: #454545;
 }
 
@@ -105,7 +104,6 @@ aside:hover {
 }
 
 aside:hover a {
-    background-color: #454545;
     color: #fff;
 }
 

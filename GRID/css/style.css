@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid_container {
+    display: grid;
+    grid-template-areas: "header header header"
+                "nav nav nav"
+                "main main aside"
+                "footer footer footer";
+    /*grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto;*/
+}
+
+header {
+    background-color: rgb(72, 72, 255);
+    /*grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;*/
+
+    /*grid-area: 1 / 1 / 2 / 4;*/
+    /*Dette betyr: top / venstre / bunn / høyre*/
+
+    grid-area: header;
+}
+
+nav {
+    background-color: rgb(255, 61, 61);
+    /*grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;*/
+
+    grid-area: nav;
+}
+
+main {
+    background-color: rgb(255, 255, 64);
+    /*grid-area: 3 / 1 / 4 / 3;*/
+
+    grid-area: main;
+}
+
+aside {
+    background-color: rgb(66, 181, 66);
+    /*grid-area: 3 / 3 / 4 / 4;*/
+
+    grid-area: aside;
+}
+
+footer {
+    background-color: rgb(60, 60, 60);
+    color: #fff;
+    /*grid-area: 4 / 1 / 5 / 4;*/
+
+    grid-area: footer;
+}

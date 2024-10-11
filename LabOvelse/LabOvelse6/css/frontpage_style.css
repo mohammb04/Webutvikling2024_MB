@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: repeat(4, 0.25fr);
+}
+
+header {
+    grid-area: 1/1/2/4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main {
+    grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+main h2 {
+    grid-area: 1/1/2/5;
+}
+
+#natur {
+    grid-area: 2/1/4/3;
+    background-color: hsl(146, 52%, 72%);
+}
+
+#science {
+    grid-area: 2/3/3/4;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#animal {
+    grid-area: 2/4/3/5;
+    background-color: hsl(337, 52%, 72%);
+}
+
+#tech {
+    grid-area: 3/3/4/5;
+    background-color: hsl(204, 52%, 72%);
+}
+
+#culture {
+    grid-area: 4/1/5/2;
+    background-color: hsl(271, 52%, 72%);
+}
+
+#history {
+    grid-area: 4/2/5/3;
+    background-color: hsl(8, 52%, 72%);
+}
+
+#geo {
+    grid-area: 4/3/5/4;
+    background-color: hsl(168, 52%, 72%);
+}
+
+#food {
+    grid-area: 4/4/5/5;
+    background-color: hsl(30, 52%, 72%);
+}
+
+footer {
+    grid-area: 3/1/4/4;
+}

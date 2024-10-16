@@ -60,7 +60,7 @@ nav ul li a {
 }
 
 header section{
-    margin: 2rem;
+    padding: 2rem;
 }
 
 figure {
@@ -70,13 +70,12 @@ figure {
     }
 }
 
-main {
+main section {
     background-color: #094884;
-}
-
-main section section{
-    margin: 2rem;
-    color: #fff;
+    section {
+        padding: 2rem;
+        color: #fff;
+    }
 }
 
 .btn {
@@ -84,10 +83,33 @@ main section section{
     text-decoration: none;
     border-style: solid;
     padding: 0.75rem;
-    margin-top: 1rem;
     display: inline-block;
+}
+
+#change-order {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #tjenester {
     background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    article {
+        background-color: #e4e4e4;
+        padding: 1.5rem;
+    }
+    #booking {
+        background-color: #094884;
+        color: #fff;
+    }
+}
+
+footer {
+    padding: 2rem;
+    background-color: #3b3b3b;
+    color: #fff;
 }

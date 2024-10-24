@@ -1,27 +1,73 @@
-.flex-container-center {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.flex-container-center, form label i {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
+.blurred_effect, form {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 form {
-  background-color: #fff;
-  padding: 3rem;
   color: #3a3a3a;
-  max-width: 600px;
-  width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  padding: 3rem;
   border-radius: 30px;
-  gap: 0.5rem;
+}
+form label {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  background-color: #fff;
+}
+form label i {
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  border-radius: 100%;
+  display: flex !important;
+  width: 50px;
+  background-color: #3a3a3a;
+  color: #fff;
+}
+form label input {
+  border: none;
 }
 form input {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   padding: 1rem;
-  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #7abfff;
+  background-color: #fff;
   height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://picsum.photos/1920/1080");
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
